@@ -174,6 +174,9 @@ vim.o.confirm = true
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+-- Open netrw (file explorer) with <leader>pv
+vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { noremap = true, silent = true, desc = 'Open [P]roject [V]iew (netrw)' })
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
